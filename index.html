@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Life in Weeks</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Hello Life.</h1>
+        <p>Get a glimpse of your life in weeks</p>
+      </header>
+      <form>
+        <div class="row">
+          <div class="form-group column column-25">
+            <label for="age">Your Age</label>
+            <input
+              required
+              name="age"
+              id="age"
+              type="number"
+              min="1"
+              max="120"
+            />
+          </div>
+          <div class="form-group column column-25">
+            <label for="le">Life Expectancy</label>
+            <input required name="le" id="le" type="number" min="1" max="120" />
+          </div>
+        </div>
+        <div class="form-group">
+          <button type="submit" name="magic" id="magic">Show me</button>
+        </div>
+      </form>
+      <div id="summary"></div>
+      <div id="calendar"></div>
+      <footer>
+        Inspired by
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://waitbutwhy.com/2014/05/life-weeks.html"
+          >Your life in weeks</a
+        >
+        &
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://waitbutwhy.com/2015/12/the-tail-end.html"
+          >The tail end</a
+        >
+      </footer>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
